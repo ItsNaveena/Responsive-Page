@@ -1,17 +1,116 @@
-*{
-    margin: 0;
-    padding:0;
-    font-family: cursive, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive, sans-serif;
 }
 
-.footer{
-    
-    width: 100%;
+.footer {
+  width: 100%;
+  height: 200px;
+}
+
+.footerContainer {
+  width: 22%;
+  height: 80px;
+  margin-left: 35%;
+  translate: 50px 50px;
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+
+.subscribeBtns {
+  background-color: rgb(57, 155, 194);
+  margin: 8px;
+  border-radius: 10px;
+}
+
+.subscribeBtns a {
+  text-decoration: none;
+  color: black;
+}
+
+.subscribeBtns:hover {
+  background-color: rgb(126, 189, 214);
+  width: 350px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+.icons {
+  width: 20px;
+  border-radius: 50px;
+}
+
+.copyright {
+  margin-top: 2%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.navbarLogo {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+.navbarlist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+}
+
+.navbarlist li {
+  list-style: none;
+}
+
+.navbarItems a {
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: black;
+}
+
+.navbarItems a:hover {
+  color: rgb(14, 101, 107);
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  top: 10%;
+  right: 5%;
+  position: absolute;
+}
+
+.line {
+  width: 33px;
+  background-color: rgb(14, 101, 107);
+  height: 4px;
+  margin: 5px 3px;
+}
+
+.outerAbout{
+    background-color: rgb(181, 207, 207);
+    width: 80%;
     height: 200px;
-    
+    margin: 10%;
+    border-radius: 80px;
 }
 
-.footerContainer{
+.innerAbout{
+    background-color: rgb(14, 101, 107);
     width: 22%;
     height: 80px;
     margin-left: 35%;
@@ -19,38 +118,29 @@
     display: block;
     text-align: center;
     justify-content: center;
-    
 }
 
-.subscribeBtns{
-    background-color: rgb(57, 155, 194);
-    margin: 8px;
-    border-radius: 10px;
+@media only screen and (max-width: 1140px) {
+  .navbar {
+    width: 300px;
+    height: 400px;
+    flex-direction: column;
+    transition: 0.8s;
+  }
+  .navbarlist {
+    flex-direction: column;
+    transition: 0.8s;
+  }
 
-}
+  .burger {
+    display: block;
+  }
 
-.subscribeBtns a{
-    text-decoration: none;
-    color: black;
-}
+  .navRes {
+    height: 120px;
+  }
 
-.subscribeBtns:hover {
-    background-color: rgb(126, 189, 214);
-    width: 350px;
-    height: 25px;
-    border-radius: 10px;
-
-}
-
-.icons{
-    width: 20px;
-    border-radius: 50px;
-    
-}
-
-.copyright{
-    margin-top: 2%;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 0;
+  .navListRes {
+    opacity: 0;
+  }
 }
